@@ -36,6 +36,7 @@ nav a {
   padding: 0 15px;
   text-decoration: none;
   font-size: 17px;
+  width:75px;
 }
 nav a:first-of-type{
   padding-left: 50px;
@@ -59,7 +60,9 @@ section h2{
   overflow: auto;
   white-space: nowrap;
   width: auto;
+  position:relative;
   padding-bottom: 15px;
+  overflow-y: hidden;
 }
 
 /*featured game*/
@@ -175,8 +178,9 @@ section h2{
 
 /* scroll bar configurations */
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 5px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
 }
  
 ::-webkit-scrollbar-track {
@@ -184,8 +188,20 @@ section h2{
 }
 
 ::-webkit-scrollbar-thumb {
+  background: #00000080;
+}
+::-webkit-scrollbar-thumb:hover {
   background: black;
 }
+/*
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+*/
 
 .hori-scroll::-webkit-scrollbar-button:end{height: 50px; width:30%;}
 .hori-scroll::-webkit-scrollbar-button:start{height: 50px; width:30%;}
@@ -201,4 +217,3 @@ section h2{
   -ms-transform:rotateX(-180deg); /* IE 9 */
   -webkit-transform:rotateX(-180deg); /* Safari and Chrome */
 }
-

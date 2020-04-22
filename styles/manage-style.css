@@ -1,35 +1,42 @@
 /*publish game*/
+#upload{
+  padding: 0;
+}
 .uploadSection{
   width: 100%;
-  height: 120px;
+  height: 320px;
+  padding:75px, auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.buttons{
+  padding-top:60px;
 }
 .uploadButton{
-  margin-top: 10px;
-  border: 2px black solid;
-  color: black;
+  border: 2px white solid;
+  background-color: #00000000;
+  color: white;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-family: brandon-grotesque, sans-serif;
   font-size: 1.5em;
   cursor: pointer;
   border-radius:20px;
-  margin: 75px, auto;
+  display:block;
+  width: 35%;
+  margin: 20px auto;
 }
-
+.uploadButton:hover{
+  background-color: #ffffff80;
+  
+}
 /*manage section*/
-#manage h2{
-  display: inline-block;
-}
-
-#manage input{
-  margin-left: 50px;
-}
 
 .user-game{
   display: grid;
-  grid-template-columns: 300px 280px auto;
+  grid-template-columns: 300px 320px auto;
   grid-column-gap: 15px;
   padding: 25px 0;
   margin-right: 50px;
@@ -44,6 +51,7 @@
   background-size: cover;
   background-position: center;
   border-radius:20px;
+  box-shadow: 2px 2px 5px grey;
 }
 /*text info for the game*/
 .gameIntro{
@@ -67,6 +75,10 @@
 .gameIntro span.unpublished{
   background-color: orange;
 }
+.gameIntro span.collab,
+.gameIntro span.indiv{
+  background-color: gray;
+}
 em{
   color:#eb652d;
   font-weight: 500;
@@ -84,7 +96,7 @@ p i{
 }
 @media screen and (min-width: 1000px){
   #manage .options{
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 280px 280px;
   }
 }
 .btn{
@@ -107,6 +119,64 @@ p i{
   background-color: black;
 }
 
-hr{
-  margin: 0 50px 0 0;
+/*filters*/
+#manage input{
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align:middle;
+}
+.filters{
+  display:inline-block;
+  vertical-align:middle;
+}
+.filters-search{
+  margin:15px 0 5px;
+}
+.filter {
+  float: left;
+  display: inline;
+  padding: 5px;
+  background: #fff;
+  border: 1px #ddd solid;
+  color: #555;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: brandon-grotesque, sans-serif;
+  line-height: 1em;
+  border-radius: 0;
+  margin-left: 0;
+}
+
+.filter:not(:last-of-type){
+  border-right: none; /* Prevent double borders */
+}
+
+.filter:hover {
+  border-color: orange;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: orange;
+  border-right: 1px orange solid;
+  z-index: 5;
+}
+
+.filter:active,
+.filter.is-checked {
+  background-color: orange;
+}
+
+.filter.is-checked {
+  color: white;
+  border: none;
+  font-weight: 700;
+  text-shadow: 0 -1px #ddd;
+}
+
+.filter:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.5);`
+}
+
+.filters:after {
+  content: '';
+  display: block;
+  clear: both;
 }

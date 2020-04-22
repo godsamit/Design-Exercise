@@ -26,8 +26,11 @@
     
 <!--upload section-->
   <section id="upload">
-    <div class="uploadSection">
-      <button class="uploadButton">Publish new game, assets, or mods.</button>
+    <div class="uploadSection" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)),url('./../assets/publish.jpg')">
+      <div class="buttons">
+        <a class="uploadButton">Publish new game, assets, or mods.</a>
+        <a class="uploadButton">Visit AssetStore</a>
+      </div>
     </div>
   </section>
 <!--upload section-->
@@ -36,14 +39,25 @@
   <section id="manage">
     <span class="title">
       <h2>Manage your games</h2>
-      <input type="text" placeholder="Search your games..">
+      <div class="filters-search">
+        <div class="filters">
+            <button class="filter is-checked" data-filter="*">All</button>
+            <button class="filter" data-filter=".published">Published</button>
+            <button class="filter" data-filter=".unpublished">Unpublished</button>
+            <button class="filter" data-filter=".indiv">Individual</button>
+            <button class="filter" data-filter=".collab">Collaborative</button>
+        </div>
+        <input type="text" placeholder="Search your games..">
+      </div>
     </span>
     <div class="userGames">
 <!--iterable block for a game-->
-      <div class="user-game published">
+      <div class="user-game published indiv">
         <div class="userGamePic" style="background-image: url('./../assets/featured-game/doom.jpg')"></div>
         <div class="gameIntro">
-          <h3>Doom</h3><span class="published">published <i class="fas fa-check fa-sm"></i></span>
+          <h3>Doom</h3>
+          <span class="published">published <i class="fas fa-check fa-sm"></i></span>
+          <span class="indiv">individual</span>
           <p><em>45k</em> people have played your game.<br>
             <em>220k$</em> earned in the past two weeks.
             <br><br>
@@ -60,11 +74,13 @@
         </div>
       </div>
 <!--iterable block for a game-->
-      <hr>
-      <div class="user-game unpublished">
+
+      <div class="user-game unpublished collab">
         <div class="userGamePic" style="background-image: url('./../assets/featured-game/half-life.jpeg')"></div>
         <div class="gameIntro">
-          <h3>Half-life 3</h3><span class="unpublished">in progres <i class="fas fa-ellipsis-h fa-sm"></i></span>
+          <h3>Half-life 3</h3>
+          <span class="unpublished">in progres <i class="fas fa-ellipsis-h fa-sm"></i></span>
+          <span class="collab">Collaborative</span>
           <p>
             Description: I want it to be even more epic than the previous game.
             <br><br>
@@ -75,15 +91,16 @@
         <div class="options">
           <button class="btn active"><i class="fas fa-edit"></i>&ensp;Edit game</button>
           <button class="btn"><i class="fa fa-bars"></i>&ensp;Manage asset</button>
-          <p></p>
+          <button class="btn"><i class="fas fa-user-friends"></i>&ensp;Collaborate</button>
           <button class="btn"><i class="fas fa-upload"></i>&ensp;Publish game</button>
         </div>
       </div>
-      <hr>
-      <div class="user-game published">
+      <div class="user-game published collab">
         <div class="userGamePic" style="background-image: url('./../assets/featured-game/animal-crossing.png')"></div>
         <div class="gameIntro">
-          <h3>Animal Crossing</h3><span class="published">published <i class="fas fa-check fa-sm"></i></span>
+          <h3>Animal Crossing</h3>
+          <span class="published">published <i class="fas fa-check fa-sm"></i></span>
+          <span class="collab">Collaborative</span>
           <p><em>135k</em> people have played your game.<br>
             <em>560k$</em> earned in the past two weeks.
             <br><br>
@@ -97,6 +114,26 @@
           <button class="btn"><i class="fa fa-bars"></i>&ensp;Manage asset</button>
           <button class="btn"><i class="fas fa-dollar-sign"></i>&ensp;Traffic and monetization</button>
           <button class="btn active"><i class="fas fa-play"></i>&ensp;Enter game</button>
+        </div>
+      </div>
+      <div class="user-game unpublished indiv">
+        <div class="userGamePic" style="background-image: url('./../assets/featured-game/deltarune.jpg')"></div>
+        <div class="gameIntro">
+          <h3>Deltarune</h3>
+          <span class="unpublished">in progres <i class="fas fa-ellipsis-h fa-sm"></i></span>
+          <span class="indiv">Individual</span>
+          <p>
+            Description: I want it to be even more epic than the previous game.
+            <br><br>
+            Tags: <i>Shooting</i>, <i>FPS</i>, <i>Multi-player</i>
+            <br><br>
+          </p>
+        </div>
+        <div class="options">
+          <button class="btn active"><i class="fas fa-edit"></i>&ensp;Edit game</button>
+          <button class="btn"><i class="fa fa-bars"></i>&ensp;Manage asset</button>
+          <button class="btn"><i class="fas fa-envelope-open"></i>&ensp;Invite collaborators</button>
+          <button class="btn"><i class="fas fa-upload"></i>&ensp;Publish game</button>
         </div>
       </div>
     </div>
