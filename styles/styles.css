@@ -164,6 +164,8 @@ section h2{
 .category-game p{
   font-size: 0.9em;
   line-height: 1.2em;
+  height: 100px;
+  overflow: hidden;
 }
 /*categorized games*/
 

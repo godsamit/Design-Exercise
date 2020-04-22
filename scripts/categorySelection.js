@@ -13,21 +13,17 @@ var button = `
   cursor: pointer;
 ">Play Now</button>
 `
+
 $('#category-select').change(function() {
   var selectedCategory = $('#category-select').val();
   if (selectedCategory == "show-all"){
-    $(".column .text button").fadeOut(500).promise().done(function(){
-      $(this).remove();
-      $(".column").animate({width: "450px"}, 1000, function(){
+    $(".column").animate({width: "450px"}, 500, function(){
         $(".column, .divider").fadeIn(500)
       });
-    });
   }
   else{
     $(".column:not(." + selectedCategory + "), .divider").fadeOut(500).promise().done(function(){
-      $(".column." + selectedCategory).animate({width: "90%"}, 1000, function(){
-        $(button).hide().appendTo(".column." + selectedCategory + " .text").fadeIn(500);
-      });
+      $(".column." + selectedCategory).animate({width: "90%"}, 500);
     });
   }
 });
