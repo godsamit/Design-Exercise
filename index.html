@@ -1,0 +1,373 @@
+<!DOCYTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta content="DreamCraft Gaming Platform">
+  <title>DreamCraft</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gyh0mpi.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+
+<!--top navBar-->
+  <nav id="topbar">
+    <img id="logo" src="./assets/logo-white.webp">
+    <a class="active" href="#">Games</a>
+    <a href="./templates/manage.html">Create</a>
+    <a href="#">Community</a>
+    <input type="text" style="width: 600px;" placeholder="Search games, assets and communities..">
+  </nav>
+<!--top navBar-->
+
+<!--featured games-->
+  <section id="featured">
+    <h2 class="title">Featured</h2>
+    <div class="hori-scroll">
+
+<!--iterable block for a game-->
+      <div class="featured-game" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('./assets/featured-game/doom.jpg')">
+        <span class="text">
+          <h3>Doom</h3>
+          <span>&ensp;4.3/5&ensp;45k players</span>
+          <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space marine operating under the auspices of the Union Aerospace Corporation, who fights... </p>
+        </span>
+      </div>
+<!--iterable block for a game-->
+      <div class="featured-game" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('./assets/featured-game/minecraft.png')">
+        <span class="text">
+          <h3>Minecraft</h3>
+          <span>&ensp;4.9/5&ensp;12m players</span>
+          <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools, build structures or earthworks, and depending on game mode, can fight computer-controlled... </p>
+        </span>
+      </div>
+      <div class="featured-game" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('./assets/featured-game/animal-crossing.png')">
+        <span class="text">
+          <h3>Animal Crossing</h3>
+          <span>&ensp;4.7/5&ensp;135k players</span>
+          <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives in a village inhabited by various anthropomorphic animals, carrying out various activities such as fishing...</p>
+        </span>
+      </div>
+      <div class="featured-game" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('./assets/featured-game/dead-by-daylight.jpg')">
+        <span class="text">
+          <h3>Dead By Daylight</h3>
+          <span>&ensp;4.2/5&ensp;15k players</span>
+          <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage killer, and the other four players play as survivors, trying to escape the killer and avoid being caught...</p>
+        </span>
+      </div>
+      <div class="featured-game" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('./assets/featured-game/yakuza.jpeg')">
+        <span class="text">
+          <h3>Yakuza Kiwami</h3>
+          <span>&ensp;4.5/5&ensp;60k players</span>
+          <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's murder. After a decade in prison, Kiryu searches for his old friends who have gone missing...</p>
+        </span>
+      </div>
+    </div>
+  </section>
+<!--featured games-->
+
+<!--category games-->
+  <section id="categories">
+    <span class="title">
+      <h2>Categories</h2>
+      <span class="dropdown">
+        <label for="category-select">Take me to:</label>
+        <select id="category-select">
+          <option value="show-all">Show All</option>
+          <option value="educational">Educational</option>
+          <option value="adventure">Adventure</option>
+          <option value="fighting">Fighting</option>
+          <option value="shooting">Shooting</option>
+          <option value="battle-royale">Battle Royale</option>
+          <option value="simulation">Simulations</option>
+        </select>
+      </span>
+    </span>
+    <div class="hori-scroll">
+<!--iterable block for a column-->
+      <div class="column educational">
+        <h2 class="category">Educational</h2>
+    <!--iterable block for a game-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/doom.jpg')"></div>
+          <span class="text">
+            <h3>Doom</h3>
+            <h5>4.3/5&ensp;45k players</h5>
+            <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space...</p>
+          </span>
+        </div>
+    <!--iterable block for a game-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/minecraft.png')"></div>
+          <span class="text">
+            <h3>Minecraft</h3>
+            <h5>4.9/5&ensp;12m players</h5>
+            <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/animal-crossing.png')"></div>
+          <span class="text">
+            <h3>Animal Crossing</h3>
+            <h5>4.7/5&ensp;135k players</h5>
+            <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/dead-by-daylight.jpg')"></div>
+          <span class="text">
+            <h3>Dead by Daylight</h3>
+            <h5>4.2/5&ensp;15k players</h5>
+            <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/yakuza.jpeg')"></div>
+          <span class="text">
+            <h3>Yakuza Kiwami</h3>
+            <h5>4.5/5&ensp;60k players</h5>
+            <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's...</p>
+          </span>
+        </div>
+      </div>
+<!--iterable block for a column-->
+      <span class="divider"></span>
+      <div class="column adventure">
+        <h2 class="category">Adventure</h2>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/doom.jpg')"></div>
+          <span class="text">
+            <h3>Doom</h3>
+            <h5>4.3/5&ensp;45k players</h5>
+            <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space...</p>
+          </span>
+        </div>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/minecraft.png')"></div>
+          <span class="text">
+            <h3>Minecraft</h3>
+            <h5>4.9/5&ensp;12m players</h5>
+            <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/animal-crossing.png')"></div>
+          <span class="text">
+            <h3>Animal Crossing</h3>
+            <h5>4.7/5&ensp;135k players</h5>
+            <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/dead-by-daylight.jpg')"></div>
+          <span class="text">
+            <h3>Dead by Daylight</h3>
+            <h5>4.2/5&ensp;15k players</h5>
+            <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/yakuza.jpeg')"></div>
+          <span class="text">
+            <h3>Yakuza Kiwami</h3>
+            <h5>4.5/5&ensp;60k players</h5>
+            <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's...</p>
+          </span>
+        </div>
+      </div>
+      <span class="divider"></span>
+      <div class="column fighting">
+        <h2 class="category">Fighting</h2>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/doom.jpg')"></div>
+          <span class="text">
+            <h3>Doom</h3>
+            <h5>4.3/5&ensp;45k players</h5>
+            <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space...</p>
+          </span>
+        </div>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/minecraft.png')"></div>
+          <span class="text">
+            <h3>Minecraft</h3>
+            <h5>4.9/5&ensp;12m players</h5>
+            <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/animal-crossing.png')"></div>
+          <span class="text">
+            <h3>Animal Crossing</h3>
+            <h5>4.7/5&ensp;135k players</h5>
+            <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/dead-by-daylight.jpg')"></div>
+          <span class="text">
+            <h3>Dead by Daylight</h3>
+            <h5>4.2/5&ensp;15k players</h5>
+            <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/yakuza.jpeg')"></div>
+          <span class="text">
+            <h3>Yakuza Kiwami</h3>
+            <h5>4.5/5&ensp;60k players</h5>
+            <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's...</p>
+          </span>
+        </div>
+      </div>
+      <span class="divider"></span>
+      <div class="column shooting">
+        <h2 class="category">Shooting</h2>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/doom.jpg')"></div>
+          <span class="text">
+            <h3>Doom</h3>
+            <h5>4.3/5&ensp;45k players</h5>
+            <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space...</p>
+          </span>
+        </div>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/minecraft.png')"></div>
+          <span class="text">
+            <h3>Minecraft</h3>
+            <h5>4.9/5&ensp;12m players</h5>
+            <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/animal-crossing.png')"></div>
+          <span class="text">
+            <h3>Animal Crossing</h3>
+            <h5>4.7/5&ensp;135k players</h5>
+            <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/dead-by-daylight.jpg')"></div>
+          <span class="text">
+            <h3>Dead by Daylight</h3>
+            <h5>4.2/5&ensp;15k players</h5>
+            <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/yakuza.jpeg')"></div>
+          <span class="text">
+            <h3>Yakuza Kiwami</h3>
+            <h5>4.5/5&ensp;60k players</h5>
+            <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's...</p>
+          </span>
+        </div>
+      </div>
+      <span class="divider"></span>
+      <div class="column battle-royale">
+        <h2 class="category">Battle Royale</h2>
+      <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/doom.jpg')"></div>
+          <span class="text">
+            <h3>Doom</h3>
+            <h5>4.3/5&ensp;45k players</h5>
+            <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space...</p>
+          </span>
+        </div>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/minecraft.png')"></div>
+          <span class="text">
+            <h3>Minecraft</h3>
+            <h5>4.9/5&ensp;12m players</h5>
+            <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/animal-crossing.png')"></div>
+          <span class="text">
+            <h3>Animal Crossing</h3>
+            <h5>4.7/5&ensp;135k players</h5>
+            <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/dead-by-daylight.jpg')"></div>
+          <span class="text">
+            <h3>Dead by Daylight</h3>
+            <h5>4.2/5&ensp;15k players</h5>
+            <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/yakuza.jpeg')"></div>
+          <span class="text">
+            <h3>Yakuza Kiwami</h3>
+            <h5>4.5/5&ensp;60k players</h5>
+            <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's...</p>
+          </span>
+        </div>
+      </div>
+      <span class="divider"></span>
+      <div class="column simulation">
+        <h2 class="category">Simulation</h2>
+      <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/doom.jpg')"></div>
+          <span class="text">
+            <h3>Doom</h3>
+            <h5>4.3/5&ensp;45k players</h5>
+            <p>Doom is a video game series and media franchise created by John Carmack, John Romero, Adrian Carmack, Kevin Cloud, and Tom Hall. The series focuses on the exploits of an unnamed space...</p>
+          </span>
+        </div>
+    <!--iterable block-->
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/minecraft.png')"></div>
+          <span class="text">
+            <h3>Minecraft</h3>
+            <h5>4.9/5&ensp;12m players</h5>
+            <p>Minecraft is a sandbox video game developed by Mojang. In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials, craft tools...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/animal-crossing.png')"></div>
+          <span class="text">
+            <h3>Animal Crossing</h3>
+            <h5>4.7/5&ensp;135k players</h5>
+            <p>Animal Crossing is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi. In Animal Crossing, the player character is a human who lives...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/dead-by-daylight.jpg')"></div>
+          <span class="text">
+            <h3>Dead by Daylight</h3>
+            <h5>4.2/5&ensp;15k players</h5>
+            <p>Dead by Daylight is an asymmetric survival horror developed by Behaviour Interactive. The game is played as a one versus four online multiplayer where one player takes on the role of the savage...</p>
+          </span>
+        </div>
+        <div class="category-game" >
+          <div class="gameImage" style="background-image: url('./assets/featured-game/yakuza.jpeg')"></div>
+          <span class="text">
+            <h3>Yakuza Kiwami</h3>
+            <h5>4.5/5&ensp;60k players</h5>
+            <p>Yakuza Kiwami is an action-adventure video game developed by Sega. Yakuza Kiwami explores the life of a man named Kazuma Kiryu who is demoted from his clan after taking the blame for his boss's...</p>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!--category games-->
+
+  <script src="scripts/categorySelection.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCYTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta content="DreamCraft Gaming Platform">
+  <title>DreamCraft</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gyh0mpi.css">
+  <link rel="stylesheet" href="./../styles/styles.css">
+  <link rel="stylesheet" href="./../styles/manage-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/8b6dca0357.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  </head>
+  
+  <body>
+<!--top navBar-->
+  <nav id="topbar">
+    <img id="logo" src="./../assets/logo-white.webp">
+    <a href="./../index.html">Games</a>
+    <a class="active" href="#">Create</a>
+    <a href="#">Community</a>
+    <input type="text" style="width: 600px;" placeholder="Search games, assets and communities..">
+  </nav>
+<!--topnavBar-->
+    
+<!--upload section-->
+  <section id="upload">
+    <div class="uploadSection">
+      <button class="uploadButton">Publish new game, assets, or mods.</button>
+    </div>
+  </section>
+<!--upload section-->
+    
+<!--game management-->
+  <section id="manage">
+    <span class="title">
+      <h2>Manage your games</h2>
+      <input type="text" placeholder="Search your games..">
+    </span>
+    <div class="userGames">
+<!--iterable block for a game-->
+      <div class="user-game published">
+        <div class="userGamePic" style="background-image: url('./../assets/featured-game/doom.jpg')"></div>
+        <div class="gameIntro">
+          <h3>Doom</h3><span class="published">published <i class="fas fa-check fa-sm"></i></span>
+          <p><em>45k</em> people have played your game.<br>
+            <em>220k$</em> earned in the past two weeks.
+            <br><br>
+            Tags: <i>Shooting</i>, <i>FPS</i>, <i>Multi-player</i>
+            <br><br>
+            <i>Check user reviews</i>
+          </p>
+        </div>
+        <div class="options">
+          <button class="btn"><i class="fas fa-edit"></i>&ensp;Edit game</button>
+          <button class="btn"><i class="fa fa-bars"></i>&ensp;Manage asset</button>
+          <button class="btn"><i class="fas fa-dollar-sign"></i>&ensp;Traffic and monetization</button>
+          <button class="btn active"><i class="fas fa-play"></i>&ensp;Enter game</button>
+        </div>
+      </div>
+<!--iterable block for a game-->
+      <hr>
+      <div class="user-game unpublished">
+        <div class="userGamePic" style="background-image: url('./../assets/featured-game/half-life.jpeg')"></div>
+        <div class="gameIntro">
+          <h3>Half-life 3</h3><span class="unpublished">in progres <i class="fas fa-ellipsis-h fa-sm"></i></span>
+          <p>
+            Description: I want it to be even more epic than the previous game.
+            <br><br>
+            Tags: <i>Shooting</i>, <i>FPS</i>, <i>Multi-player</i>
+            <br><br>
+          </p>
+        </div>
+        <div class="options">
+          <button class="btn active"><i class="fas fa-edit"></i>&ensp;Edit game</button>
+          <button class="btn"><i class="fa fa-bars"></i>&ensp;Manage asset</button>
+          <p></p>
+          <button class="btn"><i class="fas fa-upload"></i>&ensp;Publish game</button>
+        </div>
+      </div>
+      <hr>
+      <div class="user-game published">
+        <div class="userGamePic" style="background-image: url('./../assets/featured-game/animal-crossing.png')"></div>
+        <div class="gameIntro">
+          <h3>Animal Crossing</h3><span class="published">published <i class="fas fa-check fa-sm"></i></span>
+          <p><em>135k</em> people have played your game.<br>
+            <em>560k$</em> earned in the past two weeks.
+            <br><br>
+            Tags: <i>Life-Simulation</i>, <i>Social</i>, <i>Multi-player</i>
+            <br><br>
+            <i>Check user reviews</i>
+          </p>
+        </div>
+        <div class="options">
+          <button class="btn"><i class="fas fa-edit"></i>&ensp;Edit game</button>
+          <button class="btn"><i class="fa fa-bars"></i>&ensp;Manage asset</button>
+          <button class="btn"><i class="fas fa-dollar-sign"></i>&ensp;Traffic and monetization</button>
+          <button class="btn active"><i class="fas fa-play"></i>&ensp;Enter game</button>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+<!--game management-->
+  <script src="./../scripts/gameSorting.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/*publish game*/
+.uploadSection{
+  width: 100%;
+  height: 120px;
+}
+.uploadButton{
+  margin-top: 10px;
+  border: 2px black solid;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius:20px;
+  margin: 75px, auto;
+}
+
+/*manage section*/
+#manage h2{
+  display: inline-block;
+}
+
+#manage input{
+  margin-left: 50px;
+}
+
+.user-game{
+  display: grid;
+  grid-template-columns: 300px 280px auto;
+  grid-column-gap: 15px;
+  padding: 25px 0;
+  margin-right: 50px;
+}
+.user-game.unpublished{
+  background-color: lightyellow;
+}
+.userGamePic{
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius:20px;
+}
+/*text info for the game*/
+.gameIntro{
+  padding-left: 5px;
+}
+.gameIntro h3{
+  display: inline-block;
+}
+.gameIntro span{
+  display: inline-block;
+  font-size: .8em;
+  font-weight:700;
+  color: white;
+  padding: 5px;
+  margin-left: 10px;
+}
+.gameIntro span.published{
+  background-color: green;
+
+}
+.gameIntro span.unpublished{
+  background-color: orange;
+}
+em{
+  color:#eb652d;
+  font-weight: 500;
+}
+p i{
+  text-decoration: underline;
+}
+/*text info for the game*/
+
+/*buttons*/
+#manage .options{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+@media screen and (min-width: 1000px){
+  #manage .options{
+    grid-template-columns: 250px 250px;
+  }
+}
+.btn{
+  background-color: white;
+  margin-top: 10px;
+  border: 2px black solid;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius:20px;
+}
+
+.btn.active{
+  color:white;
+  background-color: black;
+}
+
+hr{
+  margin: 0 50px 0 0;
+}
