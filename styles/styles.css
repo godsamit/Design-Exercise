@@ -106,6 +106,7 @@ section h2{
 #categories h2{
   display: inline-block;
 }
+
 /*title*/
 .category{
   font-size:1.5em;
@@ -169,15 +170,6 @@ section h2{
 }
 /*categorized games*/
 
-/*vertical divider*/
-.divider{
-  display: inline-block;
-  height: 600px;
-  border-left: 1px solid #808080;
-  z-index: 5;
-}
-/*vertical divider*/
-
 /* scroll bar configurations */
 ::-webkit-scrollbar {
   width: 12px;
@@ -195,27 +187,41 @@ section h2{
 ::-webkit-scrollbar-thumb:hover {
   background: black;
 }
-/*
-::-webkit-scrollbar-button:single-button {
-  background-color: #bbbbbb;
-  display: block;
-  border-style: solid;
-  height: 13px;
-  width: 16px;
-}
-*/
 
 .hori-scroll::-webkit-scrollbar-button:end{height: 50px; width:30%;}
 .hori-scroll::-webkit-scrollbar-button:start{height: 50px; width:30%;}
-
-/*category scrollbar*/
-#categories .hori-scroll{
-  transform:rotateX(180deg);
-  -ms-transform:rotateX(180deg); /* IE 9 */
-  -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+#categories .hori-scroll::-webkit-scrollbar {
+  display: none;
 }
-#categories .hori-scroll .column{
-    transform:rotateX(-180deg);
-  -ms-transform:rotateX(-180deg); /* IE 9 */
-  -webkit-transform:rotateX(-180deg); /* Safari and Chrome */
+/* Next & previous buttons */
+.hori-wrapper{
+  position:relative;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,50%);
+  vertical-align: center;
+  width: 20px;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5em;
+  user-select: none;
+  background-color: rgba(0,0,0,0.6);
+    transform: translate(0, -30%);
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.9);
+}
+.prev{
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
